@@ -1,0 +1,7 @@
+[
+  {
+    "key": "ctrl+alt+p",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "npm run preview:root\u000D" }
+  }
+]

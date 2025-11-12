@@ -49,3 +49,12 @@ Guides users through eSIM QR setup, UK PAC code transfer, and common error triag
 ├─ netlify.toml
 └─ .github/workflows/ci.yml
 ```
+
+### Private Preview (Codespaces)
+- Open the repo in **GitHub Codespaces**.
+- It auto-starts the preview and opens your browser (port **5173**).
+- If it didn’t open: open the **Ports** panel and click the **globe** on 5173.
+- Manual start: `npm run preview:root`
+- Stop: `Ctrl + C` in the terminal.
+
+**Deploying to Netlify:** deploy the **repo root** (same structure you previewed). No `/docs` mirror needed.

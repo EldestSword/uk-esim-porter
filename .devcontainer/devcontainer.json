@@ -1,0 +1,14 @@
+{
+  "name": "Preview (Root)",
+  "postStartCommand": "npm run preview:root",
+  "portsAttributes": {
+    "5173": { "label": "App (root)", "onAutoForward": "openBrowser", "requireLocalPort": true }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
