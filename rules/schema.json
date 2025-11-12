@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Carrier Rules",
+  "type": "object",
+  "required": ["meta", "flows"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["id", "label", "support"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "support": {
+          "type": "object",
+          "required": ["apn", "esim_help", "pac_help"],
+          "properties": {
+            "apn": { "type": "string" },
+            "esim_help": { "type": "string" },
+            "pac_help": { "type": "string" }
+          }
+        }
+      }
+    },
+    "flows": {
+      "type": "object",
+      "required": ["scan_qr", "pac", "triage"],
+      "properties": {
+        "scan_qr": {
+          "type": "object",
+          "required": ["steps", "tips"],
+          "properties": {
+            "steps": { "type": "array", "items": { "type": "object" } },
+            "tips": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "pac": {
+          "type": "object",
+          "required": ["steps", "notes"],
+          "properties": {
+            "steps": { "type": "array", "items": { "type": "object" } },
+            "notes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "triage": {
+          "type": "object",
+          "required": ["issues"],
+          "properties": {
+            "issues": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["code", "title", "steps"],
+                "properties": {
+                  "code": { "type": "string" },
+                  "title": { "type": "string" },
+                  "steps": { "type": "array", "items": { "type": "object" } }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

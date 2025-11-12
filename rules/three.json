@@ -1,0 +1,14 @@
+{
+  "meta": { "id": "three", "label": "Three",
+    "support": {
+      "apn": "three.co.uk",
+      "esim_help": "https://www.three.co.uk/support/sim-and-phone/esim",
+      "pac_help": "https://www.ofcom.org.uk/phones-telecoms-and-internet/advice-for-consumers/costs-and-billing/switching-your-mobile-provider"
+    }
+  },
+  "flows": {
+    "scan_qr": { "steps": [ { "text": "Use device eSIM menu to scan the QR from Three." } ], "tips": ["Keep data on during activation."] },
+    "pac": { "steps": [ { "text": "Text PAC to 65075 then submit to Three." } ], "notes": ["Ports on working days; keep both lines active."] },
+    "triage": { "issues": [] }
+  }
+}

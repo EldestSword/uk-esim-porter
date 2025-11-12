@@ -1,0 +1,14 @@
+{
+  "meta": { "id": "vodafone", "label": "Vodafone",
+    "support": {
+      "apn": "wap.vodafone.co.uk",
+      "esim_help": "https://support.vodafone.co.uk/",
+      "pac_help": "https://www.ofcom.org.uk/phones-telecoms-and-internet/advice-for-consumers/costs-and-billing/switching-your-mobile-provider"
+    }
+  },
+  "flows": {
+    "scan_qr": { "steps": [ { "text": "Install eSIM via QR; follow on-screen prompts." } ], "tips": ["Restart after install."] },
+    "pac": { "steps": [ { "text": "Get PAC via 65075; give to Vodafone to keep number." } ], "notes": ["Allow 1 working day for ports."] },
+    "triage": { "issues": [] }
+  }
+}

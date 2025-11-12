@@ -1,0 +1,15 @@
+:root { --gap: 16px; --radius: 10px; --max: 820px; }
+*{box-sizing:border-box} body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#0b0c10;color:#f2f4f7}
+.app-header,.app-footer{padding:var(--gap);background:#111827}
+.app-header h1{margin:.2rem 0 0 0;font-size:1.25rem}
+nav a{color:#93c5fd;margin-right:12px;text-decoration:none}
+.container{max-width:var(--max);margin:var(--gap) auto;padding:var(--gap);background:#111827;border:1px solid #1f2937;border-radius:var(--radius)}
+.card{background:#0f172a;border:1px solid #1f2937;border-radius:var(--radius);padding:var(--gap);margin-bottom:var(--gap)}
+.card h2{margin-top:0}
+.select{width:100%;padding:10px;border-radius:8px;border:1px solid #374151;background:#0b1220;color:#fff}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid #374151;background:#111827;color:#fff;cursor:pointer}
+.btn.primary{background:#2563eb;border-color:#1d4ed8}
+ul.steps{list-style:decimal;padding-left:1.25rem}
+.note{font-size:.9rem;color:#cbd5e1}
+.link{color:#93c5fd}
+kbd{background:#0b1220;padding:2px 6px;border-radius:6px;border:1px solid #374151}
