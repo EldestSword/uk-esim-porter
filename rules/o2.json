@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "id": "o2",
+    "label": "O2",
+    "support": {
+      "apn": "mobile.o2.co.uk",
+      "esim_help": "https://www.apple.com/uk/support/esim/",
+      "pac_help": "https://www.ofcom.org.uk/phones-telecoms-and-internet/advice-for-consumers/costs-and-billing/switching-your-mobile-provider"
+    }
+  },
+  "flows": {
+    "scan_qr": {
+      "steps": [
+        { "text": "On your iPhone: Settings → Mobile Data → Add eSIM." },
+        { "text": "Choose “Use QR Code”, then scan the QR from O2." },
+        { "text": "If asked, confirm eSIM label and default line." },
+        { "html": "Need device help? See <kbd>Settings</kbd> → <kbd>About</kbd> to confirm eSIM support." }
+      ],
+      "tips": [
+        "Turn Wi‑Fi on during activation.",
+        "If transfer stalls, toggle Airplane Mode 10s, then retry."
+      ]
+    },
+    "pac": {
+      "steps": [
+        { "text": "Text PAC to 65075 from your current SIM to get your code (free)." },
+        { "text": "Give the PAC to O2 when ordering or in My O2 to keep your number." },
+        { "text": "Porting typically completes within 1 working day (Mon–Fri)." }
+      ],
+      "notes": [
+        "PAC is valid for 30 days.",
+        "Keep both lines active until the port finishes."
+      ]
+    },
+    "triage": {
+      "issues": [
+        {
+          "code": "NO_SERVICE_AFTER_QR",
+          "title": "No service after installing eSIM",
+          "steps": [
+            { "text": "Power cycle the device; confirm eSIM is the default line." },
+            { "text": "APN should be mobile.o2.co.uk; re‑apply if blank." },
+            { "text": "Check O2 profile update in Settings → General → About." }
+          ]
+        },
+        {
+          "code": "PORT_DELAY",
+          "title": "Number transfer taking longer than expected",
+          "steps": [
+            { "text": "Confirm PAC not expired and MSISDN matches order." },
+            { "text": "Keep old SIM in a phone and reachable during the window." },
+            { "text": "If >24h (working day), contact O2 porting support." }
+          ]
+        }
+      ]
+    }
+  }
+}

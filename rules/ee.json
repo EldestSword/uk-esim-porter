@@ -1,0 +1,26 @@
+{
+  "meta": { "id": "ee", "label": "EE",
+    "support": {
+      "apn": "everywhere",
+      "esim_help": "https://ee.co.uk/help/help-new/phones-and-device/esim",
+      "pac_help": "https://www.ofcom.org.uk/phones-telecoms-and-internet/advice-for-consumers/costs-and-billing/switching-your-mobile-provider"
+    }
+  },
+  "flows": {
+    "scan_qr": {
+      "steps": [
+        { "text": "Settings → Mobile Data → Add eSIM → Use QR Code." },
+        { "text": "Scan the QR from EE and follow prompts." }
+      ],
+      "tips": ["Keep Wi‑Fi on; wait 2–5 minutes after profile install."]
+    },
+    "pac": {
+      "steps": [
+        { "text": "Text PAC to 65075 on your current network." },
+        { "text": "Provide PAC to EE (order journey or account portal)." }
+      ],
+      "notes": ["PAC valid 30 days; port completes on working days."]
+    },
+    "triage": { "issues": [] }
+  }
+}

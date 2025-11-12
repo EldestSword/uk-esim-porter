@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UK eSIM & Number Transfer Wizard</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>UK eSIM & Number Transfer</h1>
+    <nav aria-label="primary">
+      <a href="#/" data-link>Home</a>
+      <a href="#/scan-qr" data-link>Scan QR (eSIM)</a>
+      <a href="#/pac" data-link>PAC (Keep Number)</a>
+      <a href="#/triage" data-link>Error Triage</a>
+    </nav>
+  </header>
+
+  <main id="app" class="container" role="main" aria-live="polite"></main>
+
+  <footer class="app-footer">
+    <small>Made for UK carriers. Edit rules in <code>/rules</code>.</small>
+  </footer>
+
+  <script type="module">
+    import { mount } from './src/app.js';
+    mount(document.getElementById('app'));
+  </script>
+</body>
+</html>
